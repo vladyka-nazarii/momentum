@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="cover-component">
+        <div class="big-cover-container">
+          <img class="big-cover-image" src="" alt="big cover">
+        </div>
+        <div class="cover-info">
+          <div class="cover-title"></div>
+          <div class="cover-author"></div>
+        </div>
+        <div class="progress-bar-component">
+          <div class="progress-bar-time">
+            <div class="current">0:00</div>
+            <div class="duration"></div>
+          </div>
+          <div class="timeline">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="player-controls">
+          <div class="main-controls">
+            <div class="play-controls">
+              <div class="prev-button controls-button" title="Previous track">
+                <svg viewBox="0 0 24 24" fill="rgb(255, 255, 255)" class="Prev__Icon-sc-1di3ylj-1 cCMEhb">
+                  <path d="M11.253 17.84l-6.955-5.248a.736.736 0 0 1 0-1.184l6.955-5.249c.507-.383 1.247-.032 1.247.592V17.25c0 .624-.74.975-1.247.592zm8.5 0l-6.955-5.248a.736.736 0 0 1 0-1.184l6.955-5.249C20.26 5.776 21 6.127 21 6.751V17.25c0 .624-.74.975-1.247.592z"></path>
+                </svg>
+              </div>
+              <div class="play-button controls-button" title="Play">
+                <svg viewBox="0 0 36 36" fill="rgb(255, 255, 255)" class="play-icon">
+                  <path d="M12.233 7.68l15.75 10.124c.69.443.69 1.45 0 1.892L12.233 29.82a1.125 1.125 0 0 1-1.733-.947V8.627c0-.89.985-1.428 1.733-.947z"></path>
+                </svg>
+                <svg viewBox="0 0 24 24" fill="rgb(255, 255, 255)" class="pause-icon">
+                  <path d="M10 3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4zm8 0a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4z"></path>
+                </svg>
+              </div>
+              <div class="next-button controls-button" title="Next track">
+                <svg viewBox="0 0 24 24" fill="rgb(255, 255, 255)" class="next-icon">
+                  <path d="M12.747 17.84l6.955-5.248a.736.736 0 0 0 0-1.184L12.747 6.16c-.507-.383-1.247-.032-1.247.592V17.25c0 .624.74.975 1.247.592zm-8.5 0l6.955-5.248a.736.736 0 0 0 0-1.184L4.247 6.16C3.74 5.776 3 6.127 3 6.751V17.25c0 .624.74.975 1.247.592z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="volume-control">
+              <div class="volume-button controls-button" title="Mute">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="rgb(255, 255, 255)">
+                  <path class="full-volume" d="M63.4,71.6c-1.2,0-2.3-0.6-2.9-1.7c-0.9-1.6-0.4-3.7,1.2-4.6c5.5-3.2,8.9-9.1,8.9-15.4s-3.4-12.2-8.9-15.4 c-1.6-0.9-2.2-3-1.2-4.6c0.9-1.6,3-2.2,4.6-1.2c7.5,4.4,12.2,12.5,12.2,21.2s-4.7,16.8-12.2,21.2C64.6,71.5,64,71.6,63.4,71.6z"></path>
+                  <path class="half-volume" d="M57.1,60.7c-1.2,0-2.3-0.6-2.9-1.7c-0.9-1.6-0.4-3.7,1.2-4.6C57,53.5,58,51.8,58,50s-1-3.5-2.6-4.4 c-1.6-0.9-2.2-3-1.2-4.6c0.9-1.6,3-2.2,4.6-1.2c3.6,2.1,5.9,6,5.9,10.2s-2.3,8.1-5.9,10.2C58.2,60.5,57.7,60.7,57.1,60.7z"></path>
+                  <polygon class="mute-volume" points="85,40 80,35 70,45 60,35 55,40 65,50 55,60 60,65 70,55 80,65 85,60 75,50 "></polygon>
+                  <path d="M44.2,24.3L28.7,36.6l-0.3,0.3H11.9c-1.1,0-1.9,0.9-1.9,1.9v22.3c0,1.1,0.9,1.9,1.9,1.9h16.4l0.3,0.3l15.5,12.4 c1.3,1,3.1,0.1,3.1-1.5V25.8C47.3,24.2,45.5,23.3,44.2,24.3z"></path>
+                </svg>
+              </div>
+              <div class="volume-slider">
+                <div class="volume-percentage"></div>
+              </div>
+            </div>
+          </div>
+          <div class="second-controls">
+            <div class="shuffle-button controls-button" title="Shuffle">
+              <svg viewBox="0 0 24 24" fill="rgb(255, 255, 255, 0.5)" class="shuffle-svg">
+                <path d="M17.643 5.157l.07.063 2.072 2.122.05.059.027.034.028.042.041.078.032.082.026.105.008.067.003.076-.005.079-.014.081-.018.063-.032.083-.017.036-.024.042-.032.048-.019.025-.054.061-2.073 2.123a.721.721 0 0 1-1.036 0 .764.764 0 0 1-.061-.99l.06-.071.822-.842h-2.199L12 12l3.298 3.376h2.2l-.822-.84a.763.763 0 0 1 0-1.062.721.721 0 0 1 1.036 0l2.073 2.123a.75.75 0 0 1 .06.067l-.06-.067c.029.029.055.06.077.092l.028.042.041.079.032.082.026.104.01.087-.001.103-.01.072-.025.104-.032.083-.041.078-.05.074-.055.06-2.073 2.123a.721.721 0 0 1-1.036 0 .763.763 0 0 1 0-1.061l.821-.842h-2.376l-.064-.002a.722.722 0 0 1-.58-.217l-3.514-3.597-3.513 3.597a.727.727 0 0 1-.422.213l-.096.007H4.733a.742.742 0 0 1-.733-.75c0-.386.283-.703.648-.746l.085-.005h1.895L9.926 12 6.628 8.623H4.733A.742.742 0 0 1 4 7.873c0-.415.328-.75.733-.75h2.199c.194 0 .38.078.518.22l3.513 3.596 3.514-3.597.066-.06.066-.047.076-.042.058-.025.054-.018.085-.019.089-.008h2.526l-.821-.842a.763.763 0 0 1 0-1.061.72.72 0 0 1 .967-.063z"></path>
+              </svg>
+            </div>
+            <div class="repeat-button controls-button" title="No Repeat">
+              <svg viewBox="0 0 24 24" class="repeat-svg">
+                <path class="repeat-icon" d="M16.25 11.75a.75.75 0 0 1 .745.663L17 12.5V14a3.75 3.75 0 0 1-3.587 3.747l-.163.003H6.56l.97.97a.75.75 0 0 1-.99 1.123l-.07-.063-2.25-2.25a.756.756 0 0 1-.073-.084l-.056-.087-.046-.103-.018-.057-.019-.088-.005-.044L4 16.986l.003-.053.012-.084.022-.083.033-.083.04-.074.022-.034.025-.035.063-.07 2.25-2.25a.75.75 0 0 1 1.123.99l-.063.07-.97.97h6.69a2.25 2.25 0 0 0 2.246-2.118L15.5 14v-1.5a.75.75 0 0 1 .75-.75zm-1.79-6.593l.07.063 2.25 2.25.031.033.042.05.053.084.024.046.025.06.018.058.019.088.006.066v.09l-.003.043-.016.087-.024.081-.025.061-.04.074-.037.055-.035.043-.038.041-2.25 2.25a.75.75 0 0 1-1.123-.99l.063-.07.969-.97H7.75a2.25 2.25 0 0 0-2.246 2.118L5.5 11v1.5a.75.75 0 0 1-1.495.087L4 12.5V11a3.75 3.75 0 0 1 3.587-3.747l.163-.003h6.689l-.97-.97a.75.75 0 0 1-.062-.99l.063-.07a.75.75 0 0 1 .99-.063z"></path>
+                <path class="repeat-one-icon" d="M16.25 11.75a.75.75 0 0 1 .745.663L17 12.5V14a3.75 3.75 0 0 1-3.587 3.747l-.163.003H6.56l.97.97a.75.75 0 0 1-.99 1.123l-.07-.063-2.25-2.25a.756.756 0 0 1-.073-.084l-.056-.087-.046-.103-.018-.057-.019-.088-.005-.044L4 16.986l.003-.053.012-.084.022-.083.033-.083.04-.074.022-.034.025-.035.063-.07 2.25-2.25a.75.75 0 0 1 1.123.99l-.063.07-.97.97h6.69a2.25 2.25 0 0 0 2.246-2.118L15.5 14v-1.5a.75.75 0 0 1 .75-.75zm3.896-2.603a.5.5 0 0 1 .854.354v5.086a.5.5 0 0 1-1 0v-3.879l-.146.147a.5.5 0 0 1-.708-.708zm-5.686-3.99l.07.063 2.25 2.25.031.033.042.05.053.084.024.046.025.06.018.058.019.088.006.066v.09l-.003.043-.016.087-.024.081-.025.061-.04.074-.037.055-.035.043-.038.041-2.25 2.25a.75.75 0 0 1-1.123-.99l.063-.07.969-.97H7.75a2.25 2.25 0 0 0-2.246 2.118L5.5 11v1.5a.75.75 0 0 1-1.495.087L4 12.5V11a3.75 3.75 0 0 1 3.587-3.747l.163-.003h6.689l-.97-.97a.75.75 0 0 1-.062-.99l.063-.07a.75.75 0 0 1 .99-.063z"></path>
+              </svg>
+            </div>
+            <div class="playlist-button controls-button" title="Playlist">
+              <svg viewBox="0 0 24 24" fill="rgb(255, 255, 255)" class="PlaylistButton">
+                <path d="M4.75 16.429c.414 0 .75.351.75.785 0 .434-.336.786-.75.786S4 17.648 4 17.214c0-.434.336-.785.75-.785zm13.5 0c.414 0 .75.351.75.785 0 .434-.336.786-.75.786H8.5c-.414 0-.75-.352-.75-.786 0-.434.336-.785.75-.785zm-13.5-4.715c.414 0 .75.352.75.786 0 .434-.336.786-.75.786S4 12.934 4 12.5c0-.434.336-.786.75-.786zm3.75 0h9.75c.414 0 .75.352.75.786a.775.775 0 0 1-.648.779l-.102.007H8.5c-.414 0-.75-.352-.75-.786 0-.398.282-.727.648-.779l.102-.007h9.75zM18.25 7c.414 0 .75.352.75.786a.775.775 0 0 1-.648.778l-.102.007H8.5c-.414 0-.75-.351-.75-.785 0-.398.282-.727.648-.779L8.5 7h9.75zM4.75 7c.414 0 .75.352.75.786 0 .434-.336.785-.75.785S4 8.22 4 7.786C4 7.352 4.336 7 4.75 7z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="playlist-component">
+        <div class="playlist-container"></div>
+      </div>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" placeholder="[Enter city]"/>
+      <div class="icon-temp">
+        <i class="weather-icon owf"></i>
+        <span class="temperature"></span>
+      </div>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="weather-description"></span>
+        <span class="wind-speed"></span>
+        <span class="humidity"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Enter name]" />
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="setting">
+      <div class="setting-wrapper">
+        <div class="setting-container nipple">
+          <ul class="settings-list">
+            <li class="lang">
+              <span class="setting-name">Language</span>
+              <div class="select-lang">
+                <div class="en-lang">
+                  <input class="lang-radio" type="radio" id="en" name="lang" value="en" checked>
+                  <label class="lang-label" for="en">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="24" height="12">
+                      <clipPath id="s">
+                        <path d="M0,0 v30 h60 v-30 z"/>
+                      </clipPath>
+                      <clipPath id="t">
+                        <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/>
+                      </clipPath>
+                      <g clip-path="url(#s)">
+                        <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                        <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/>
+                        <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                        <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                      </g>
+                      </svg>ENG</label>
+                </div>
+                <div class="ru-lang">
+                  <input class="lang-radio" type="radio" id="ru" name="lang" value="ru">
+                  <label class="lang-label" for="ru">
+                    <svg class="flag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" width="24" height="12">
+                      <rect fill="#fff" width="12" height="3"/>
+                      <rect fill="#d52b1e" y="3" width="12" height="3"/>
+                      <rect fill="#0039a6" y="2" width="12" height="2"/>
+                    </svg>RUS</label>
+                </div>
+              </div>
+            </li>
+            <li class="bg">
+              <span class="setting-name">Background</span>
+              <div class="select-bg">
+                <div class="git">
+                  <input class="lang-radio" type="radio" id="git" name="bg" value="git" checked><label class="lang-label" for="git">GitHub</label>
+                </div>
+                <div class="unsplash">
+                  <input class="lang-radio" type="radio" id="unsplash" name="bg" value="git"><label class="lang-label" for="unsplash">Unsplash API</label>
+                </div>
+                <div class="flickr">
+                  <input class="lang-radio" type="radio" id="flickr" name="bg" value="git"><label class="lang-label" for="flickr">Flickr API</label>
+                </div>
+              </div>
+            </li>
+            <li class="tags">
+              <span class="setting-name">Tags</span>
+              <input class="bg-tags" type="text">
+            </li>
+            <li class="slide-toggle">
+              <span class="setting-name">Time</span>
+              <input class="checkbox" type="checkbox" id="time" checked><label class="slider" for="time"></label>
+            </li>
+            <li class="slide-toggle">
+              <span class="setting-name">Date</span>
+              <input class="checkbox" type="checkbox" id="date" checked><label class="slider" for="date"></label>
+            </li>
+            <li class="slide-toggle">
+              <span class="setting-name">Greeting</span>
+              <input class="checkbox" type="checkbox" id="greeting" checked><label class="slider" for="greeting"></label>
+            </li>
+            <li class="slide-toggle">
+              <span class="setting-name">Quote</span>
+              <input class="checkbox" type="checkbox" id="quote" checked><label class="slider" for="quote"></label>
+            </li>
+            <li class="slide-toggle">
+              <span class="setting-name">Weather</span>
+              <input class="checkbox" type="checkbox" id="weather" checked><label class="slider" for="weather"></label>
+            </li>
+            <li class="slide-toggle">
+              <span class="setting-name">Audioplayer</span>
+              <input class="checkbox" type="checkbox" id="audio" checked><label class="slider" for="player"></label>
+            </li>
+            <li class="slide-toggle">
+              <span class="setting-name">To Do List</span>
+              <input class="checkbox" type="checkbox" id="todolist" checked><label class="slider" for="todolist"></label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <svg class="setting-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.274 340.274">
+        <path d="M293.629 127.806l-5.795-13.739c19.846-44.856 18.53-46.189 14.676-50.08l-25.353-24.77-2.516-2.12h-2.937c-1.549 0-6.173 0-44.712 17.48l-14.184-5.719c-18.332-45.444-20.212-45.444-25.58-45.444h-35.765c-5.362 0-7.446-.006-24.448 45.606l-14.123 5.734C86.848 43.757 71.574 38.19 67.452 38.19l-3.381.105-27.27 26.737c-4.138 3.891-5.582 5.263 15.402 49.425l-5.774 13.691C0 146.097 0 147.838 0 153.33v35.068c0 5.501 0 7.44 46.585 24.127l5.773 13.667c-19.843 44.832-18.51 46.178-14.655 50.032l25.353 24.8 2.522 2.168h2.951c1.525 0 6.092 0 44.685-17.516l14.159 5.758c18.335 45.438 20.218 45.427 25.598 45.427h35.771c5.47 0 7.41 0 24.463-45.589l14.195-5.74c26.014 11 41.253 16.585 45.349 16.585l3.404-.096 27.479-26.901c3.909-3.945 5.278-5.309-15.589-49.288l5.734-13.702c46.496-17.967 46.496-19.853 46.496-25.221V151.88c-.005-5.519-.005-7.446-46.644-24.074zM170.128 228.474c-32.798 0-59.504-26.187-59.504-58.364 0-32.153 26.707-58.315 59.504-58.315 32.78 0 59.43 26.168 59.43 58.315-.006 32.177-26.656 58.364-59.43 58.364z" fill="#FFF"></path>
+      </svg>
+    </div>
+    <div class="quote-div">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="todolist">
+      <span class="title">To Do List</span>
+      <div class="todo-container">
+        <ul class="tasks">
+        </ul>
+        <input class="todo-text" type="text">
+        <button class="add-todo">Add</button>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
